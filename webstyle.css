@@ -1,0 +1,254 @@
+
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        margin: 0px;
+    
+    }
+    header{
+       background: url(image/bg.jpg);
+       text-align: center;
+       width: 100%;
+       height: 200px;
+       background-size: cover;
+       background-attachment: fixed;
+       position: relative;
+       overflow: hidden;
+        
+    }
+   
+    .overlay h1{
+        font-family: ;
+        font-size: 80px;
+        color: white;
+        text-shadow: 1px 1px 1px #333;
+    }
+    nav a{
+        text-decoration: none;
+        outline: none;
+    color: white;
+    display: inline-block;
+    margin:5px 20px;
+    padding: 0px;
+    text-align: center;
+    
+    }
+    nav{
+        padding: 0px;
+        text-align: center;
+        background-color: black;
+        box-shadow: 3px white;
+        
+    }
+    
+    nav a:hover{
+        background: linear-gradient(rgba(255, 255, 255, 0.171),rgba(172, 166, 166, 0.123));
+    
+        border-radius: 10px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.555);
+      
+        box-shadow: 1px 1px 3px white;
+        margin: 0px 5px;
+    }
+    nav a.active{
+        background-color: rgba(128, 128, 128, 0.185);
+        border-bottom:  1px solid white;
+border-radius: 2px ;  
+    }
+   
+    .dropdown{
+        display: inline-block;
+       
+    }
+    .dropdown_list{
+        position:absolute;
+        background: url(image/bgdrp.jpg);
+        padding: 20px;
+        width: 150px;
+        margin-top: 0px;
+        display: none;
+        z-index: 999;
+       
+    }
+    .dropdown_list a{
+        text-align: center;
+        width: 150px;
+        display: block;
+        padding: 0px;
+        margin: 0px 0px;   
+    }
+    
+    .dropdown:hover .dropdown_list{
+        display: block;
+    
+    }
+     .slider{
+         background: url(image/bgdrp.jpg);
+         /* background-position: center; */
+         background-size: cover;
+        
+        width: 100%;
+         box-shadow: 0 0 5px white;
+          border-bottom: 3px solid black;
+          overflow: hidden;
+          font-size: 15px;
+          letter-spacing: 3px;
+          color: white;
+        height: 35px;
+        margin-top: auto;
+            
+        }
+        
+        .slide-text{
+            animation: slider 15s infinite linear;
+            margin-top: 5px;
+        }
+
+    @keyframes slider{
+        0%{
+            transform: translate(100%);
+        }
+        100%{
+            transform: translate(-100%);
+        }
+
+    }
+    
+    aside{
+        background: linear-gradient(100deg,black,rgb(77, 74, 74));
+        text-align: center;
+        box-shadow: 0 0 10px black;
+       width: 250px;
+       height: 1200px;
+       top: 0px;
+       float: left;
+       position: sticky;
+
+
+    }
+    aside a{
+        margin: ;
+        padding:15px 25px;
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        outline: none;
+        /* display is most important */
+        display:block ;
+        
+    }
+   
+    
+.netflix:hover{
+    background-image: url("data:image/png;base64,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");
+
+background-position: center;
+box-shadow:0 0 5px  white;
+border-bottom: 2px solid white;
+border-radius: 2px;
+}
+.amazon:hover{
+    background-image: url(image/amazon.jpg);
+background-position: center;
+box-shadow: 0 0 5px white;
+border-bottom: 2px solid white;
+border-radius: 2px;
+}
+.sonyliv:hover{
+    background-image: url(image/sony.jpg); 
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 5px white;
+    border-bottom: 2px solid white;
+border-radius: 2px;
+}
+.MX:hover{
+  background-image: url("image/mx.jpg") ;
+background-position: center;
+box-shadow: 0 0 5px white;
+background-size:cover;
+border-bottom: 2px solid white;
+border-radius: 2px;
+}
+.zee5:hover{
+    background-image: url(image/zee5.jpg);
+    background-position:center;
+    box-shadow: 0 0 5px white;
+    border-bottom: 2px solid white;
+    border-radius: 2px;
+}
+.hotstar:hover{
+    background-image: url(image/Disney+Hotstar.jpg);
+    background-position: center;
+    box-shadow: 0 0 5px white;
+background-size: cover;
+border-bottom: 2px solid white;
+border-radius: 2px;
+}
+.youtube:hover{
+    background-image: url(image/youtube.png);
+    background-position: center;
+    box-shadow: 0 0 5px white;
+    border-bottom: 2px solid white;
+border-radius: 2px;
+}
+section{
+    margin-left:280px ;
+    padding: 20px;
+}
+article table{
+    text-align: center;
+    line-height: 45px;
+    word-spacing: 2px;
+}
+ 
+    /* comment us form */
+.comment{
+    background:linear-gradient(45deg,#304352,#d7d2cc) ;
+    width: 300px;
+    padding: 15px;
+    line-height: 22px;
+    color: white;
+    margin-top: 150px;
+    box-shadow: 0 0 5px rgb(175, 174, 174);
+    margin: auto;
+
+}
+.comment h2{
+    text-shadow:0 0 2px black;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+
+
+    .b{
+              
+  align-self: auto;
+  margin-top: 5px;
+  margin-left: 35%;
+            }
+    
+footer{
+    background-image: url(image/images.png);
+    background-size: cover;
+    background-position: center;
+    height: 170px;
+    line-height: 1.6;
+    background-color:rgba(218, 173, 61, 0.904);
+    margin-left: 280px;
+    text-align: center;
+    color: white;
+    background-image: ;
+    text-decoration: none;
+}
+footer a{
+    color: rgb(241, 241, 205);
+    text-decoration: none;
+    outline: none;
+    text-shadow: 0 0 2px ;
+    box-shadow: 3px white;
+    text-decoration: rgb(172, 166, 166);
+}
